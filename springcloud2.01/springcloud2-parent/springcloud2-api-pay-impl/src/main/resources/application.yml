@@ -1,0 +1,34 @@
+spring:
+   application:
+     name: pay
+eureka:
+    client:
+      service-url:    #\u591A\u4E2Aeureka\u670D\u52A1\u4E4B\u95F4\u4E92\u76F8\u8C03\u7528(\u96C6\u7FA4)
+       defaultZone: http://localhost:8000/eureka/  #,http://localhost:9000/eureka/  #,http://localhost:8763/eureka/
+###Feign客户端超时时间设置
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+#开启hystrix断路器
+#feign:
+#  hystrix:
+#    enabled: true
+##hystrix禁止服务超时时间
+#hystrix: 
+ #command:
+   #default:
+      #execution:
+       #timeout:
+        #enabled: false
+##hystrix设置服务超时时间
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 3000
+
+server:
+  port: 8003
+  enable-self-preservation: false  #关闭eureka自我保护

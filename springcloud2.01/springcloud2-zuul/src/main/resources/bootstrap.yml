@@ -1,0 +1,38 @@
+spring:
+    ###\u9879\u76EE\u540D\u79F0
+    application:
+          name: test_zuul  #\u4E0Egit\u4E2D\u7684\u914D\u7F6E\u6587\u4EF6\u540D\u4E00\u81F4
+    cloud:
+      config:
+        discovery:
+        ####configserver\u9879\u76EE\u540D
+          service-id: CONFIG #config-server\u7684\u670D\u52A1\u540D
+          enabled: true
+        ##\u7248\u672C\u73AF\u5883
+        profile: sit
+###\u5F00\u542F\u6240\u6709\u7AEF\u70B9
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+###Feign\u5BA2\u6237\u7AEF\u8D85\u65F6\u65F6\u95F4\u8BBE\u7F6E
+ribbon:
+   ReadTimeout: 5000
+   ConnectTimeout: 5000
+eureka:
+    client:
+      service-url:    #\u591A\u4E2Aeureka\u670D\u52A1\u4E4B\u95F4\u4E92\u76F8\u8C03\u7528(\u96C6\u7FA4)
+       defaultZone: http://localhost:8000/eureka/  #,http://localhost:9000/eureka/  #,http://localhost:8763/eureka/
+server:
+  port: 9001
+  enable-self-preservation: false #\u5173\u95EDeureka\u81EA\u6211\u4FDD\u62A4
+#zuul:
+#  routes:
+#    api-member:
+#      path: /api-member/**
+#      serviceId: MEMBER
+#    api-order:
+#       path: /api-order/**
+#       serviceId: ORDER
+

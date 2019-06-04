@@ -1,0 +1,35 @@
+server:
+  port: 8771
+spring:
+  application:
+    name: config
+  cloud:
+      config:
+        server:
+          git:
+            uri: https://github.com/zjf1991/config.git
+            username: 790659193@qq.com
+            password: Zjf790659193#
+            basedir: E:\basedir
+  rabbitmq:
+          host: 192.168.254.131
+          port: 5672
+          username: admin
+          password: admin
+          virtual-host: /
+  bus:
+    enabled: true
+    trace:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+##uri:github中配置文件的网址
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8000/eureka/
+

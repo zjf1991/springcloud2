@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: spring-cloud-stream-custemmer
+  rabbitmq:
+    host: 192.168.254.131
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+###\u5206\u7EC4\u6D88\u8D39
+  cloud:
+      stream:
+        bindings:
+          my_stream_channel:
+            group: groupB
+server:
+  port: 9006

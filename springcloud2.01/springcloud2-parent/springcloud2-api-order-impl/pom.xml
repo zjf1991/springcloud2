@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.yzj</groupId>
+        <artifactId>springcloud2-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>springcloud2-api-order-impl</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yzj</groupId>
+            <artifactId>springcloud2-api-order</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yzj</groupId>
+            <artifactId>springcloud2-api-member</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--springcloud 整合swagger-->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>1.7.0.RELEASE</version>
+        </dependency>
+    </dependencies>
+</project>

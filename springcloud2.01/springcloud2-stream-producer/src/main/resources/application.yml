@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-cloud-stream-producer
+  rabbitmq:
+    host: 192.168.254.131
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+  ###\u5206\u7EC4\u6D88\u8D39
+#  stream:
+#        bindings:
+#          my_stream_channel:
+#            group: orderStream
+#            content: application/json
+server:
+  port: 9005

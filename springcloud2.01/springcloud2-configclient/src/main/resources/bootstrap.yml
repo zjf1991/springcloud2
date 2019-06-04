@@ -1,0 +1,32 @@
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8000/eureka/
+spring:
+    ###\u9879\u76EE\u540D\u79F0
+    application:
+          name: test_member_config  #\u4E0Egit\u4E2D\u7684\u914D\u7F6E\u6587\u4EF6\u540D\u4E00\u81F4
+    cloud:
+      config:
+        discovery:
+        ####configserver\u9879\u76EE\u540D
+          service-id: CONFIG #config-server\u7684\u670D\u52A1\u540D
+          enabled: true
+        ##\u7248\u672C\u73AF\u5883
+        profile: pro
+    rabbitmq:
+              host: 192.168.254.131
+              port: 5672
+              username: admin
+              password: admin
+              virtual-host: /
+###\u5F00\u542F\u6240\u6709\u7AEF\u70B9
+#management:
+ # endpoints:
+  #  web:
+   #   exposure:
+    #    include: "*"
+server:
+  port: 9000
+
+
