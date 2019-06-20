@@ -1,0 +1,4 @@
+F:\springcloud2.01\springcloud2-parent\springcloud2-api-order-impl\src\main\java\com\yzj\api\oerder\feign\MemberApiFeign.java
+F:\springcloud2.01\springcloud2-parent\springcloud2-api-order-impl\src\main\java\com\yzj\api\oerder\OrderApplication.java
+F:\springcloud2.01\springcloud2-parent\springcloud2-api-order-impl\src\main\java\com\yzj\api\oerder\controller\OrderController.java
+F:\springcloud2.01\springcloud2-parent\springcloud2-api-order-impl\src\main\java\com\yzj\api\oerder\fallback\MemberFallback.java
